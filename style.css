@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+}
+
+h1{
+    margin-top: 0;
+}
+
+.homepage, .signup, .login{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.wrap{
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.red{
+    color: red;
+}
+
+.yellow{
+    color: yellow;;
+}
+/* index.php */
+.homepage{
+    background-image: url(./images/joanna-kosinska-7ACuHoezUYk-unsplash.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage a{
+    text-decoration: none;
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    background-color: rgb(179, 157, 62);
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    transition: .3s;
+}
+
+.homepage a:hover{
+    color: rgb(243, 212, 77);
+    background-color: #fff;
+    border-color: rgb(243, 212, 77);
+}
+
+/* signup.php */
+.signup, .login{
+    background-image: url(./images/pexels-johannes-plenio-1103970.jpg);
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.form-group input:focus{
+    border-color: #1b4f9e;
+}
+
+.title h1{
+    color: #1b4f9e;
+    font-size: 50px;
+    text-align: center;
+}
+
+button{
+    background-color: #1b4f9e;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #1b4f9e;
+    cursor: pointer;
+}
+
+.error{
+    color: rgb(146, 0, 0);
+}
+
