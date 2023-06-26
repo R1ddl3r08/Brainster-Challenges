@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+<body>
+    <script>
+        let number1 = parseInt(prompt("Enter the first number"))
+        let number2 = parseInt(prompt("Enter the second number"))
+        let number3 = parseInt(prompt("Enter the third number"))
+
+        if(isNaN(number1) || isNaN(number2) || isNaN(number3)){
+            alert("All values must be numbers")
+        }
+
+        smallestNumber = Math.min(number1, number2, number3)
+        largestNumber = Math.max(number1, number2, number3)
+
+        function isPrime(number)
+        {
+            if (number <= 1) {
+                return "is not prime";
+            }
+
+            for(let i = 2; i < number; i++){
+                if(number % i === 0){
+                    return "is not prime"
+                }
+
+                return "is prime"
+            }
+        }
+
+        console.log(`The smallest number ${smallestNumber} ${isPrime(smallestNumber)}, The largest number ${largestNumber} ${isPrime(largestNumber)}`)
+    </script>
+</body>
+</html>
