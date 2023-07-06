@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 19</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .bookProgress {
+            width: 100%;
+            background-color: grey;
+            border-radius: 8px;
+        }
+
+        .progressBar {
+            width: 0%;
+            height: 30px;
+            background-color: #04AA6D;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6">
+                <ul id="booksList" class="list-group"></ul>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Number of pages</th>
+                        <th scope="col">On page</th>
+                        <th scope="col">Progress bar</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+        
+        <div class="row my-5">
+            <div class="col-6">
+                <form id="addBook">
+                    <h2>Add a new book</h2>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" class="form-control" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" class="form-control" placeholder="Author">
+                    </div>
+                    <div class="form-group">
+                        <label for="numOfPages">Number of pages</label>
+                        <input type="number" id="numOfPages" class="form-control" placeholder="Number of pages">
+                    </div>
+                    <div class="form-group">
+                        <label for="onPage">On page</label>
+                        <input type="number" id="onPage" class="form-control" placeholder="On page">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Add book</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
