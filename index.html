@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 20</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="loadingScreen">
+        <div class="justify-content-center align-items-center d-flex vh-100">
+            <h1 class="display-4 font-weight-normal">Loading Quiz...</h1>
+        </div>
+    </div>
+    <div class="container animate__animated animate__fadeIn" id="jumbotron">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center font-weight-normal">Welcome to Brainster's Trivia</h1>
+            <p class="lead text-center font-weight-normal">Click on the start button to begin</p>
+            <hr class="my-4">
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-success btn-lg" href="#" role="button" id="startQuiz">Start</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="quiz">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center font-weight-normal">Good Luck!</h1>
+            <p class="lead text-center font-weight-normal">Click on the button to start again</p>
+            <hr class="my-4">
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-warning btn-lg" href="#" role="button" id="startOver">Start Over</a>
+            </div>
+        </div>
+        <div id="question">
+            <div class="card my-4 animate__animated animate__fadeIn">
+                <div class="card-header"></div>
+                <div class="card-body d-flex justify-content-between w-75 mx-auto"></div>
+                <div class="card-footer"></div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-5 text-center font-weight-normal" id="progress"></h1>
+        </div>
+    </div>
+    <div class="container" id="completed">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center font-weight-normal">Let's see your score</h1>
+            <p class="lead text-center font-weight-normal">Click on button to start again.</p>
+            <hr class="my-4">
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-danger btn-lg" href="#" role="button" id="tryAgain">Try again</a>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h1 class="display-5 text-center font-weight-normal" id="totalCorrectAnswers"></h1>
+        </div>
+    </div>
+    <div id="error">
+        <h1>Error: page not found</h1>
+    </div>
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
