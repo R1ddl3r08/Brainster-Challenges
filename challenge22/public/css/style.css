@@ -1,0 +1,57 @@
+#body{
+    background-image: url('../images/wp8210019.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+img{
+    width: 100%;
+}
+
+nav{
+    background-color: rgb(78, 46, 25);
+    opacity: 0.9;
+}
+
+.catalyst-img{
+    width: 700px;
+    margin-left: 40%;
+}
+
+#content{
+    left: 400px;
+    top: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#content h4,
+#content h2,
+#content p {
+    opacity: 1;
+}
+
+#content a{
+    right: 50%;
+    transform: translateX(50%);
+}
+
+#promise{
+    background-color: rgb(241, 225, 181);
+    border: 10px ridge orange;
+}
+
+footer{
+    background-color: rgb(78, 46, 25);
+}
+
+.userContainer, .loginContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.userInfo, .formContainer{
+    flex: 1;
+}
