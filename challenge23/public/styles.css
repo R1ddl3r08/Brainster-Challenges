@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2, h3, h4, p, ul, a, input::placeholder, textarea::placeholder{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    width: 70%;
+    margin: 0 auto;
+}
+
+button{
+    padding: 7px 20px;
+    background-color: rgb(31, 133, 201);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    background-color: rgb(53, 163, 236);
+}
+
+/* -- NAVBAR -- */
+nav{
+    background-color: transparent;
+    padding-top: 15px;
+}
+
+nav .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .wrapper .logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .wrapper ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav .wrapper ul li{
+    margin-left: 20px;
+}
+
+nav .wrapper ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.5;
+    transition: .2s;
+}
+
+nav .wrapper ul li a.active{
+    opacity: 1;
+}
+
+nav .wrapper ul li a:hover{
+    opacity: 1;
+}
+
+/* -- HEADER -- */
+.blog-background{
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../images/home-bg.jpg');
+}
+
+.about-background{
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../images/about-bg.jpg');
+}
+
+.post-background{
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../images/post-bg.jpg');
+}
+
+.contact-background{
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('../images/contact-bg.jpg');
+}
+
+.blog-background, .about-background, .post-background, .contact-background{
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header .titleCont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 103.6px);;
+    color: white;
+    width: 33.3333%;
+    margin: 0 auto;
+}
+
+header .titleCont h1{
+    font-size: 50px;
+}
+
+header .titleCont p, header .titleCont span{
+    opacity: 0.7;
+}
+
+/* -- FOOTER -- */
+footer{
+    padding: 50px 0;
+    border-top: 1px solid rgb(204, 204, 204);
+}
+
+footer .wrapper{
+    width: 33.3333%;
+}
+
+footer .wrapper .iconsCont{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+footer .wrapper p{
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+footer .wrapper .iconsCont a{
+    color: #000;
+    transition: .2s;
+}
+
+footer .wrapper .iconsCont a:hover{
+    color: #9b9b9b;
+}
+
+footer .wrapper .iconsCont a i{
+    font-size: 50px;
+}
+
+/* -- HOME -- */
+.homeCont, .aboutCont, .contactCont, .postCont{
+    margin: 30px 0;
+}
+
+.homeCont .wrapper, .aboutCont .wrapper , .contactCont .wrapper, .postCont .wrapper{
+    width: 33.3333%;
+}
+
+.homeCont .wrapper .homeBox{
+    margin: 20px 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+.homeCont .wrapper .homeBox .postedBy{
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.homeCont .wrapper .homeBox .postedBy span{
+    font-weight: bold;
+}
+
+.homeCont .wrapper .btnCont{
+    display: flex;
+    justify-content: end;
+}
+
+/* -- ABOUT -- */
+.aboutCont .wrapper .aboutBox{
+    margin-bottom: 50px;
+    opacity: 0.5;
+}
+
+/* -- CONTACT -- */
+.contactCont .wrapper form input, .contactCont .wrapper form textarea{
+    border: 0;
+    outline: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contactCont .wrapper form button{
+    text-transform: uppercase;
+}
+
+/* -- POST -- */
+header .titleCont .post-title{
+    font-size: 35px;
+}
+
+header .titleCont .post-subtitle{
+    font-size: 30px;
+}
+
+header .titleCont .message{
+    width: 100%;
+}
+
+.postCont .wrapper .postBox{
+    margin-bottom: 50px;
+}
+
+.postCont .wrapper .postBox p{
+    margin-bottom: 40px;
+    opacity: 0.7;
+}
+
+.postCont .wrapper .postBox p.text-light{
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.postCont .wrapper .postBox figure{
+    margin: 0px 0px 40px 0px;
+}
+
+.postCont .wrapper .postBox figure figcaption{
+    text-align: center;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+
+
+
