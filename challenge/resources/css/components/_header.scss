@@ -1,0 +1,31 @@
+@use '../abstracts/mixins' as mix;
+@use "../abstracts/variables" as var;
+@use 'sass:math';
+
+header{
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../public/images/synthesio-0301.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .homepageTitle{
+        text-align: center;
+        h1{
+            color: var.$text-color-secondary;
+            margin: 0;
+        }
+        p{
+            color: var.$text-color-secondary;
+        }
+    }
+    .alert-success, .alert-danger{
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

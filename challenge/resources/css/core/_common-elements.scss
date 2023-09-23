@@ -1,0 +1,79 @@
+@use '../abstracts/mixins' as mix;
+@use "../abstracts/variables" as var;
+@use 'sass:math';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.logoDiv{
+  text-decoration: none;
+  color: var.$text-color-base;
+  .logo{
+      width: 40px;
+      margin: 0 auto;
+      display: block;
+  }
+
+  p{
+      margin: 0;
+      font-weight: var.$font-weight-bold;
+      text-align: center;
+      text-transform: uppercase;
+  }
+}
+
+form{
+  .form-group{
+      margin-bottom: 20px;
+      label{
+          display: block;
+          margin-bottom: 10px;
+      }
+      .form-control{
+          width: 100%;
+          padding: 7px;
+          border-radius: 5px;
+          border: 1px solid #b1b1b1;
+      }
+  }
+
+  button{
+      width: 100%;
+      padding: 10px;
+      background-color: var.$background-color-primary;
+      color: var.$text-color-secondary;
+      border: 0;
+      border-radius: 5px;
+      transition: .3s;
+      cursor: pointer;
+
+      &:hover{
+          background-color: var.$hover-color;
+      }
+  }
+
+  .text-danger{
+      color:red;
+  }
+}
+
+.alert-danger{
+  padding: 10px;
+  background-color: #ec8f8f;
+  border-radius: 5px;
+  color: var.$text-color-secondary;
+}
+
+.alert-success{
+  padding: 10px;
+  background-color: #4bdb63;
+  border-radius: 5px;
+  color: var.$text-color-secondary;
+}

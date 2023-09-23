@@ -1,0 +1,11 @@
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=a85e096d3ed689
+MAIL_PASSWORD=684852f600919e
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="brainsterlabs@gmail.com"
+MAIL_FROM_NAME="Brainster Labs"
+
+Mailtrap email: brainsterlabs@gmail.com
+Mailtrap password: mailtrap1
